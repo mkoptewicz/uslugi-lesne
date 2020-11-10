@@ -20,13 +20,15 @@ a {
 }
 .container {
   background-color: var(--dark-green);
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
+  
 }
 .logo {
   width: 150px;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 .nav {
   /* visibility: hidden; */
@@ -34,7 +36,7 @@ a {
   width: 100%;
   position: absolute;
   top: 40px;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   background-color: var(--dark-green);
   transition: 0.5s;
 }
@@ -53,3 +55,10 @@ a {
   text-decoration: none;
   padding: 1rem;
 }
+.nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+
