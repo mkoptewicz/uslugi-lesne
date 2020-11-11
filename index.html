@@ -15,20 +15,24 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div id="top" class="container">
       <button class="nav-toggle" aria-label="open navigation">
         <i class="fa fa-bars"></i>
       </button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Strona główna</a>
+            <a href="#top" class="nav__link">Strona główna</a>
           </li>
-          <li class="nav__item"><a href="#hero" class="nav__link">Usługi</a></li>
           <li class="nav__item">
-            <a href="#" class="nav__link">O firmie</a>
+            <a href="#services" class="nav__link">Usługi</a>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">O firmie</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Kontakt</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -45,7 +49,7 @@
       </div>
     </section>
     <main>
-      <section class="services">
+      <section id="services" class="services">
         <div class="card">
           <h2>Usługa 1</h2>
           <p>
@@ -101,7 +105,7 @@
           </p>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <h2>O firmie</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi hic
@@ -110,7 +114,7 @@
           repudiandae excepturi delectus architecto et iusto.
         </p>
       </section>
-      <footer>
+      <footer id="contact">
         <address>Brzozowa 20 17-330 Nurzec-Stacja</address>
 
         <span>Zadzwoń: </span><a href="tel:555-555-5555">555-555-5555</a>
