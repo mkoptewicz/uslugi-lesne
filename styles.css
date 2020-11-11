@@ -27,7 +27,7 @@ a {
 
 .fa-bars {
   font-size: 2rem;
-  color: var(--text-light)
+  color: var(--text-light);
 }
 
 .nav {
@@ -103,14 +103,17 @@ a {
   width: 100%;
   padding: 1rem 1rem;
 }
+.hero__text h1 {
+  color: var(--text-light);
+}
 .hero__text p {
   padding: 1rem;
   color: var(--text-light);
 }
 .hero__text button {
   width: 150px;
-  padding: .5rem;
-  color:var(--text-light);
+  padding: 0.5rem;
+  color: var(--text-light);
   background-color: var(--dark-brown);
   border: 2px solid var(--text-light);
   border-radius: 10px;
