@@ -45,8 +45,10 @@ a {
 }
 
 .nav__list {
+  margin:0;
   padding: 0;
   text-align: center;
+  list-style: none;
 }
 
 .nav__link {
@@ -54,13 +56,30 @@ a {
   padding: 2rem;
 }
 .nav-toggle {
+  display: block;
   margin-right: 1rem;
   z-index: 1;
   background-color: var(--dark-green);
   border: 0;
   cursor: pointer;
 }
-.nav-toggle.active {
+
+@media (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    top:10vh;
+    width: 100%;
+    height: auto;
+  }
+  .nav__list {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    text-align: center;
+  }
 }
 .hero {
   padding-top: 5rem;
