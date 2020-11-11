@@ -17,7 +17,10 @@ a {
   color: var(--text-light);
 }
 .container {
-  min-height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 10vh;
   background-color: var(--dark-green);
 }
 
@@ -27,17 +30,17 @@ a {
 
 .nav {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   transform: translateY(-100%);
   position: absolute;
-  top: 100px;
+  top: 10vh;
   right: 0;
   background-color: var(--dark-green);
   transition: 0.3s;
   font-weight: bold;
 }
 .nav--visible {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 0.9;
 }
 
@@ -51,9 +54,7 @@ a {
   padding: 2rem;
 }
 .nav-toggle {
-  position: absolute;
-  top: 30px;
-  right: 30px;
+  margin-right: 1rem;
   z-index: 1;
   background-color: var(--dark-green);
   border: 0;
