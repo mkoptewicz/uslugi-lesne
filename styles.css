@@ -1,6 +1,7 @@
 :root {
   --dark-green: #5d7245;
   --text-light: #eee;
+  --dark-brown: #4f3d16;
 }
 
 * {
@@ -21,7 +22,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   min-height: 10vh;
-  background-color: var(--dark-green);
+  background-color: var(--dark-brown);
 }
 
 .fa-bars {
@@ -35,13 +36,14 @@ a {
   position: absolute;
   top: 10vh;
   right: 0;
-  background-color: var(--dark-green);
+  background-color: var(--dark-brown);
   transition: 0.3s;
   font-weight: bold;
 }
 .nav--visible {
   transform: translateY(0);
   opacity: 0.9;
+  background-color: var(--dark-brown);
 }
 
 .nav__list {
@@ -59,26 +61,25 @@ a {
   display: block;
   margin-right: 1rem;
   z-index: 1;
-  background-color: var(--dark-green);
+  background-color: var(--dark-brown);
   border: 0;
   cursor: pointer;
 }
 
 @media (min-width: 800px) {
   .container {
-   min-height:auto;
-   
+    min-height: auto;
   }
   .nav-toggle {
     display: none;
   }
   .nav {
+    position: fixed;
     height: auto;
-    top:0;
+    top: 0;
     transform: translateY(0);
   }
   .nav__list {
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
     padding: 0;
@@ -90,9 +91,18 @@ a {
   }
 }
 .hero {
-  padding-top: 5rem;
+  min-height: 100vh;
+  padding-top: 1rem;
   text-align: center;
-  /* background: url('./src/hero.jpg'); */
+  background: url("./src/hero_wood.jpg");
   background-position: center;
   background-size: cover;
+}
+.hero__text {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+.hero__text p {
+  padding: 2rem;
+  color: var(--text-light);
 }
